@@ -1,0 +1,218 @@
+2016-12-05 20:36:14.024982 UnityView[689:104312] [DYMTLInitPlatform] platform initialization successful
+
+2016-12-05 20:36:14.191466 UnityView[689:104202] -> registered mono modules 0x21427b8
+-> applicationDidFinishLaunching()
+Mono path[0] = '/var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed'
+Mono config path = '/var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed'
+PlayerConnection initialized from /var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55000
+Multi-casting "[IP] 10.7.73.251 [Port] 55000 [Flags] 2 [Guid] 4109206287 [EditorId] 2713063963 [Version] 1048832 [Id] iPhonePlayer(Jiangde-iPhone):56000 [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [10.7.73.251:55000]
+-> applicationDidBecomeActive()
+Renderer: Apple A8 GPU
+Vendor:   Apple Inc.
+Version:  OpenGL ES 2.0 Apple A8 GPU - 95.16
+GLES:     2
+GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_OES_depth24 GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_packed_depth_stencil GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_texture_float GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_vertex_array_object GL_EXT_blend_minmax GL_EXT_color_buffer_half_float GL_EXT_debug_label GL_EXT_debug_marker GL_EXT_discard_framebuffer GL_EXT_draw_instanced GL_EXT_instanced_arrays GL_EXT_map_buffer_range GL_EXT_occlusion_query_boolean GL_EXT_pvrtc_sRGB GL_EXT_read_format_bgra GL_EXT_separate_shader_objects GL_EXT_shader_framebuffer_fetch GL_EXT_shader_texture_lod GL_EXT_shadow_samplers GL_EXT_sRGB GL_EXT_texture_filter_anisotropic GL_EXT_texture_rg GL_EXT_texture_storage GL_APPLE_clip_distance GL_APPLE_color_buffer_packed_float GL_APPLE_copy_texture_levels GL_APPLE_framebuffer_multisample GL_APPLE_rgb_422 GL_APPLE_sync GL_APPLE_texture_format_BGRA8888 GL_APPLE_texture_max_level GL_APPLE_texture_packed_float GL_IMG_r
+ead_format GL_IMG_texture_compression_pvrtc 
+OPENGL LOG: Creating OpenGL ES 2.0 graphics device ; Context level  <OpenGL ES 2.0> ; Context handle 358571792
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+Begin MonoManager ReloadAssembly
+Platform assembly: /var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed/UnityEngine.dll (this message is harmless)
+Loading /var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed/UnityEngine.dll into Unity Child Domain
+Non platform assembly: /private/var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed/System.dll (this message is harmless)
+Non platform assembly: /private/var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed/Mono.Security.dll (this message is harmless)
+Non platform assembly: /private/var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed/System.Core.dll (this message is harmless)
+Platform assembly: /var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed/Assembly-CSharp.dll (this message is harmless)
+Loading /var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed/Assembly-CSharp.dll into Unity Child Domain
+Non platform assembly: /private/var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed/EasyAR.Unity.dll (this message is harmless)
+Platform assembly: /var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed/UnityEngine.Networking.dll (this message is harmless)
+Loading /var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed/UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: /var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed/UnityEngine.UI.dll (this message is harmless)
+Loading /var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed/UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: /var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed/EasyAR.Unity.dll (this message is harmless)
+Loading /var/containers/Bundle/Application/7A87CC84-E52C-43E7-A459-DBB71FF5A92C/UnityView.app/Data/Managed/EasyAR.Unity.dll into Unity Child Domain
+- Completed reload, in  0.073 seconds
+-------- Shader compilation failed
+#version 100
+#extension GL_EXT_frag_depth : enable
+precision highp float;
+uniform highp vec4 _ProjectionParams;
+uniform highp vec4 _ZBufferParams;
+uniform highp mat4 unity_CameraToWorld;
+uniform highp mat4 _NonJitteredVP;
+uniform highp mat4 _PreviousVP;
+uniform highp sampler2D _CameraDepthTexture;
+varying highp vec2 xlv_TEXCOORD0;
+varying highp vec3 xlv_TEXCOORD1;
+void main ()
+{
+  highp vec4 tmpvar_1;
+  tmpvar_1 = texture2D (_CameraDepthTexture, xlv_TEXCOORD0);
+  mediump vec2 tmpvar_2;
+  highp vec4 tmpvar_3;
+  tmpvar_3.w = 1.0;
+  tmpvar_3.xyz = ((xlv_TEXCOORD1 * (_ProjectionParams.z / xlv_TEXCOORD1.z)) * (1.0/((
+    (_ZBufferParams.x * tmpvar_1.x)
+   + _ZBufferParams.y))));
+  highp vec4 tmpvar_4;
+  tmpvar_4 = (unity_CameraToWorld * tmpvar_3);
+  highp vec4 tmpvar_5;
+  tmpvar_5 = (_PreviousVP * tmpvar_4);
+  highp vec4 tmpvar_6;
+  tmpvar_6 = (_NonJitteredVP * tmpvar_4);
+  highp vec2 tmpvar_7;
+  tmpvar_7 = (((tmpvar_5.xy / tmpvar_5.w) + 1.0) / 2.0);
+  highp vec2 tmpvar_8;
+  tmpvar_8 = (((tmpvar_6.xy / tmpvar_6.w) + 1.0) / 2.0);
+  tmpvar_2 = (tmpvar_8 - tmpvar_7);
+  mediump vec4 tmpvar_9;
+  tmpvar_9.zw = vec2(0.0, 1.0);
+  tmpvar_9.xy = tmpvar_2;
+  gl_FragDepthEXT = tmpvar_1.x;
+  gl_FragData[0] = tmpvar_9;
+}
+-------- failed compiling:
+fragment evaluation shader
+WARNING: 0:4: extension 'GL_EXT_frag_depth' is not supported
+ERROR: 0:38: Use of undeclared identifier 'gl_FragDepthEXT'
+
+Note: Creation of internal variant of shader 'Hidden/Internal-MotionVectors' failed.
+WARNING: Shader Unsupported: 'Hidden/Internal-MotionVectors' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/Internal-MotionVectors' - Setting to default shader.
+UnloadTime: 2.237000 ms
+EasyAR Version 1.3.1
+ARBuilder: ImageTracker (EasyAR.ImageTrackerBehaviour) bind CameraDevice (EasyAR.CameraDeviceBehaviour)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+EasyAR.ARBuilder:EasyBuild()
+EasyAR.EasyARBehaviour:Initialize()
+EasyAR.EasyARBehaviour:Awake()
+ 
+(Filename: /Users/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+2016-12-05 20:36:16.025086 UnityView[689:104202] [MC] System group container for systemgroup.com.apple.configurationprofiles path is /private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles
+2016-12-05 20:36:16.025755 UnityView[689:104202] [MC] Reading from public effective user settings.
+EasyAR is running on an unsupported graphics device of type -4
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+EasyAR.AugmenterBaseBehaviour:Update()
+ 
+(Filename: /Users/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+If the display fails, please consider to change your graphics API setting.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+EasyAR.AugmenterBaseBehaviour:Update()
+ 
+(Filename: /Users/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+-> applicationWillResignActive()
+2016-12-05 20:36:17.292707 UnityView[689:104202] [Common] _BSMachError: port 11c03; (os/kern) invalid capability (0x14) "Unable to insert COPY_SEND"
+2016-12-05 20:36:17.294832 UnityView[689:104202] [Common] _BSMachError: port 11c03; (os/kern) invalid capability (0x14) "Unable to insert COPY_SEND"
+-> applicationDidBecomeActive()
+Load target (True): 1 (namecard)  -> ImageTracker (EasyAR.ImageTrackerBehaviour)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+EasyAR.EasyImageTargetBehaviour:OnTargetLoad(ImageTargetBaseBehaviour, ImageTrackerBaseBehaviour, Boolean)
+EasyAR.ImageTargetBaseBehaviour:OnTargetLoad(ImageTrackerBaseBehaviour, Boolean)
+EasyAR.ImageTrackerBaseBehaviour:OnTargetLoad(ImageTracker, Target, Boolean)
+EasyAR.ImageTracker:OnLoad(IntPtr, IntPtr, Boolean)
+EasyAR.EngineNativeIOS:ezarImageTracker_checkCallBack(IntPtr)
+EasyAR.EngineNativeIOS:ImageTracker_checkCallBack(IntPtr)
+EasyAR.ImageTracker:CheckCallback()
+EasyAR.ImageTrackerBaseBehaviour:Update()
+ 
+(Filename: /Users/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Load target (True): 2 (idback)  -> ImageTracker (EasyAR.ImageTrackerBehaviour)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+EasyAR.EasyImageTargetBehaviour:OnTargetLoad(ImageTargetBaseBehaviour, ImageTrackerBaseBehaviour, Boolean)
+EasyAR.ImageTargetBaseBehaviour:OnTargetLoad(ImageTrackerBaseBehaviour, Boolean)
+EasyAR.ImageTrackerBaseBehaviour:OnTargetLoad(ImageTracker, Target, Boolean)
+EasyAR.ImageTracker:OnLoad(IntPtr, IntPtr, Boolean)
+EasyAR.EngineNativeIOS:ezarImageTracker_checkCallBack(IntPtr)
+EasyAR.EngineNativeIOS:ImageTracker_checkCallBack(IntPtr)
+EasyAR.ImageTracker:CheckCallback()
+EasyAR.ImageTrackerBaseBehaviour:Update()
+ 
+(Filename: /Users/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Load target (True): 3 (argame01)  -> ImageTracker (EasyAR.ImageTrackerBehaviour)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+EasyAR.EasyImageTargetBehaviour:OnTargetLoad(ImageTargetBaseBehaviour, ImageTrackerBaseBehaviour, Boolean)
+EasyAR.ImageTargetBaseBehaviour:OnTargetLoad(ImageTrackerBaseBehaviour, Boolean)
+EasyAR.ImageTrackerBaseBehaviour:OnTargetLoad(ImageTracker, Target, Boolean)
+EasyAR.ImageTracker:OnLoad(IntPtr, IntPtr, Boolean)
+EasyAR.EngineNativeIOS:ezarImageTracker_checkCallBack(IntPtr)
+EasyAR.EngineNativeIOS:ImageTracker_checkCallBack(IntPtr)
+EasyAR.ImageTracker:CheckCallback()
+EasyAR.ImageTrackerBaseBehaviour:Update()
+ 
+(Filename: /Users/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Load target (True): 4 (argame)  -> ImageTracker (EasyAR.ImageTrackerBehaviour)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+EasyAR.EasyImageTargetBehaviour:OnTargetLoad(ImageTargetBaseBehaviour, ImageTrackerBaseBehaviour, Boolean)
+EasyAR.ImageTargetBaseBehaviour:OnTargetLoad(ImageTrackerBaseBehaviour, Boolean)
+EasyAR.ImageTrackerBaseBehaviour:OnTargetLoad(ImageTracker, Target, Boolean)
+EasyAR.ImageTracker:OnLoad(IntPtr, IntPtr, Boolean)
+EasyAR.EngineNativeIOS:ezarImageTracker_checkCallBack(IntPtr)
+EasyAR.EngineNativeIOS:ImageTracker_checkCallBack(IntPtr)
+EasyAR.ImageTracker:CheckCallback()
+EasyAR.ImageTrackerBaseBehaviour:Update()
+ 
+(Filename: /Users/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Load target (True): 5 (argame02)  -> ImageTracker (EasyAR.ImageTrackerBehaviour)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+EasyAR.EasyImageTargetBehaviour:OnTargetLoad(ImageTargetBaseBehaviour, ImageTrackerBaseBehaviour, Boolean)
+EasyAR.ImageTargetBaseBehaviour:OnTargetLoad(ImageTrackerBaseBehaviour, Boolean)
+EasyAR.ImageTrackerBaseBehaviour:OnTargetLoad(ImageTracker, Target, Boolean)
+EasyAR.ImageTracker:OnLoad(IntPtr, IntPtr, Boolean)
+EasyAR.EngineNativeIOS:ezarImageTracker_checkCallBack(IntPtr)
+EasyAR.EngineNativeIOS:ImageTracker_checkCallBack(IntPtr)
+EasyAR.ImageTracker:CheckCallback()
+EasyAR.ImageTrackerBaseBehaviour:Update()
+ 
+(Filename: /Users/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Load target (True): 6 (argame03)  -> ImageTracker (EasyAR.ImageTrackerBehaviour)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+EasyAR.EasyImageTargetBehaviour:OnTargetLoad(ImageTargetBaseBehaviour, ImageTrackerBaseBehaviour, Boolean)
+EasyAR.ImageTargetBaseBehaviour:OnTargetLoad(ImageTrackerBaseBehaviour, Boolean)
+EasyAR.ImageTrackerBaseBehaviour:OnTargetLoad(ImageTracker, Target, Boolean)
+EasyAR.ImageTracker:OnLoad(IntPtr, IntPtr, Boolean)
+EasyAR.EngineNativeIOS:ezarImageTracker_checkCallBack(IntPtr)
+EasyAR.EngineNativeIOS:ImageTracker_checkCallBack(IntPtr)
+EasyAR.ImageTracker:CheckCallback()
+EasyAR.ImageTrackerBaseBehaviour:Update()
+ 
+(Filename: /Users/builduser/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+-> applicationWillResignActive()
+-> applicationDidEnterBackground()
+
